@@ -1,0 +1,66 @@
+% !Mode:: "TeX:UTF-8"
+%!TEX program = xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[xcolor=svgnames]{beamer}
+\mode<presentation>
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{filecontents}
+
+\begin{filecontents}{example.bib}
+@Article{傅刚2000--,
+  Title                    = {大风沙过后的思考},
+  Author                   = {傅刚 and 赵承 and 李佳路},
+  Note                     = {news},
+  Number                   = {14},
+  Url                      = {[url]http://www.bjyouth.com.cn/Bqb/20000412/GB/4216%5ED0412B1401.htm[/url]},
+  Urldate                  = {2005-07-12},
+  Date                     = {2000-04-12},
+  Journaltitle             = {北京青年报}
+}
+@Book{顾炎武1982--,
+  Title                    = {昌平山水记},
+  Author                   = {顾炎武},
+  Publisher                = {北京古籍出版社},
+  Year                     = {1982},
+  Location                 = {北京},
+  Titleaddon               = {东京考古录}
+}
+
+\end{filecontents}
+
+\usepackage[backend=biber,style=gb7714-2015]{biblatex}
+\renewcommand{\bibfont}{\zihao{8}\songti}
+\addbibresource[location=local]{example.bib}
+
+
+\title{\LaTeX{} 参考文献之 \newline
+Biblatex宏包使用和GB/T7714-2015参考文献样式}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\author{author}
+\date{\today}
+\renewcommand{\footnotesize}{\tiny}
+
+\begin{document}
+
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{测试参考文献}
+在脚注中引用或者把文献表放到脚注中
+\footnote{在脚注中引用\footcite{傅刚2000--}}
+\footfullcite{顾炎武1982--}
+\footfullcite{傅刚2000--}
+\end{frame}
+
+\begin{frame}{参考文献}
+\printbibliography[heading=bibliography,title=参考文献]
+\end{frame}
+
+
+\end{document}

@@ -1,0 +1,198 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{shokri2015privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=fcd1e648e4facf942e34fc13811d6a6e}{%
+           family={Shokri},
+           familyi={S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \strng{fullhash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \strng{authornamehash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \strng{authorfullhash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGSAC conference on computer and communications security}
+      \field{title}{Privacy-preserving deep learning}
+      \field{year}{2015}
+      \field{pages}{1310\bibrangedash 1321}
+      \range{pages}{12}
+    \endentry
+    \entry{Phong2017PrivacyPreservingDL}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b9f99b690c6fbc6ce16e38ff4f5dc67a}{%
+           family={Phong},
+           familyi={P\bibinitperiod},
+           given={Le\bibnamedelima Trieu},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=0e7c48230a016b819e91c31e2fa3a937}{%
+           family={Aono},
+           familyi={A\bibinitperiod},
+           given={Yoshinori},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a4150af4bc569bbb4c4e65cda6c94580}{%
+           family={Hayashi},
+           familyi={H\bibinitperiod},
+           given={Takuya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=79eb51536791b30afbe8e902f9b6dea4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lihua},
+           giveni={L\bibinitperiod}}}%
+        {{hash=961f7f1295dad3241e86763e0073467e}{%
+           family={Moriai},
+           familyi={M\bibinitperiod},
+           given={Shiho},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{638cbecaae45869a38cb76ef9bf38656}
+      \strng{fullhash}{2a8b6df0d41f31d3ea552581ffd8ac5e}
+      \strng{authornamehash}{638cbecaae45869a38cb76ef9bf38656}
+      \strng{authorfullhash}{2a8b6df0d41f31d3ea552581ffd8ac5e}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Forensics and Security}
+      \field{title}{Privacy-Preserving Deep Learning via Additively Homomorphic Encryption}
+      \field{volume}{13}
+      \field{year}{2017}
+      \field{pages}{1333\bibrangedash 1345}
+      \range{pages}{13}
+    \endentry
+    \entry{hitaj2017deep}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ea86e6ba0295421071c4a22b005f2217}{%
+           family={Hitaj},
+           familyi={H\bibinitperiod},
+           given={Briland},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5c4a4e7852b085ecea5927fa90f39f56}{%
+           family={Ateniese},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5dc45e351dbe91be5d6b7c18e011cf3e}{%
+           family={Pérez-Cruz},
+           familyi={P\bibinithyphendelim C\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{340d8096c648c683480b1c1ffe0515b7}
+      \strng{fullhash}{340d8096c648c683480b1c1ffe0515b7}
+      \strng{authornamehash}{340d8096c648c683480b1c1ffe0515b7}
+      \strng{authorfullhash}{340d8096c648c683480b1c1ffe0515b7}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{title}{Deep models under the GAN: information leakage from collaborative deep learning}
+      \field{year}{2017}
+      \field{pages}{603\bibrangedash 618}
+      \range{pages}{16}
+    \endentry
+    \entry{bonawitz2017practical}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=b5068fa6c52ad4193971201b160dfa57}{%
+           family={Bonawitz},
+           familyi={B\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9c72a73cdab75ff72f0eb6bf5368d696}{%
+           family={Ivanov},
+           familyi={I\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+        {{hash=841aea2daeb6b5b3047174f1f03e48da}{%
+           family={Kreuter},
+           familyi={K\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=540723ef5556f5b48e1bc648c3aafff8}{%
+           family={Marcedone},
+           familyi={M\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=597fff55821bc18415a1a2b9d8d5f2a5}{%
+           family={McMahan},
+           familyi={M\bibinitperiod},
+           given={H\bibnamedelima Brendan},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=3be8b33b00cd438013b02816f7f45368}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Sarvar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=86066638fba5b4dc33bcee0bcba473cf}{%
+           family={Ramage},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a2195b165a73fdc64f90707a66510ec6}{%
+           family={Segal},
+           familyi={S\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=93d6484d9d4a1d16f8e7c613030633ec}{%
+           family={Seth},
+           familyi={S\bibinitperiod},
+           given={Karn},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{50b4114d72232541379be90cf15087a1}
+      \strng{fullhash}{a3605eba4713348323a27c4f2b17f1ae}
+      \strng{authornamehash}{50b4114d72232541379be90cf15087a1}
+      \strng{authorfullhash}{a3605eba4713348323a27c4f2b17f1ae}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{title}{Practical Secure Aggregation for Privacy-Preserving Machine Learning}
+      \field{year}{2017}
+      \field{pages}{1175\bibrangedash 1191}
+      \range{pages}{17}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

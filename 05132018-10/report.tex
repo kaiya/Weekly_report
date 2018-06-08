@@ -1,0 +1,155 @@
+%!TEX program = xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{article}
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{geometry}
+\geometry{left=2.0cm, right=2.0cm, top=2.5cm, bottom=2.5cm}
+\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage{subfig}
+\usepackage{caption}
+\captionsetup{font={scriptsize}}
+
+\renewcommand\figurename{图}
+
+\makeatletter
+\let\@afterindentfalse\@afterindenttrue
+\@afterindenttrue
+\makeatother
+\setlength{\parindent}{2em}  
+
+\linespread{1.4}
+\setlength{\parskip}{0.5\baselineskip}
+
+\title{学习汇报\\第十周}
+\author{熊凯亚}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{本周工作}
+由于音乐区块链项目时间比较紧迫，本周主要在做这个项目。我在项目里负责区块链节点底层parity的配置及其部署，因为需要使用Docker容器技术，所以本周花在这个方面的时间比较多。
+\section{工作内容}
+\subsubsection*{Centos 安装Docker-CE步骤}
+\begin{enumerate}
+\item 卸载已有版本（可能）
+sudo yum remove docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
+
+\item 设置yum库 
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager  --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+\item 安装 
+sudo yum install docker-ce
+
+\item 启动 
+sudo systemctl start docker 
+
+\item 安装Docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-(uname -s)-(uname -m) -o /usr/local/bin/docker-compose
+
+\item 赋予执行权限 
+sudo chmod +x /usr/local/bin/docker-compose
+\end{enumerate}
+
+\subsubsection*{Ubuntu安装Docker-CE步骤} 
+\begin{enumerate}
+\item 卸载旧版本 
+sudo apt-get remove docker docker-engine docker.io
+
+\item 更新apt索引 
+sudo apt-get update
+
+\item 使apt支持https（已支持可忽略）
+
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+
+\item 添加Docker官方的GPG Key 
+
+$curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -$
+\item 设置库
+$sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu (lsb_release -cs) stable"$
+
+\item 更新 
+sudo apt-get update
+
+\item 安装Docker CE 
+sudo apt-get install docker-ce
+
+\item 安装Docker Compose 
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-(uname -s)-(uname -m) -o /usr/local/bin/docker-compose
+
+\item 赋予权限 
+sudo chmod +x /usr/local/bin/docker-compose
+
+\item 免sudo执行docker（需重新登录shell) 
+
+sudo usermod -aG docker {USER}
+\end{enumerate}
+
+\subsubsection*{配置docker加入overlay网络}
+\begin{enumerate}
+\item 修改docker启动参数 
+sudo vim /lib/systemd/system/docker.service
+
+\item 将ExecStart修改成如下：
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --cluster-store=consul://consul.azfs.com.cn:8500 --cluster-advertise=ens4:2376 --insecure-registry=0.0.0.0/0
+
+\item 重启Docker Daemon 
+sudo systemctl daemon-reload \\
+sudo systemctl restart docker
+\end{enumerate}
+\subsubsection*{安装}
+\begin{enumerate}
+\item 下载配置文件 
+git clone https://github.com/kyawn/deploy.git
+
+\item 进入配置文件夹执行脚本 
+cd deploy 
+./parity-deploy.sh --config aura --name jnuchain
+
+\item 运行容器 
+docker-compose up -d
+
+\item 停止并销毁容器 
+docker-compose down
+
+\item 开始|停止|重启某个服务 
+docker-compose start | stop | restart + 服务名称（可选）
+
+\item 查看日志 
+docker-compose logs +服务名称（可选）
+\end{enumerate}
+
+\subsubsection*{加入节点}
+\begin{enumerate}
+\item 将新节点的$eNodeURL$加入到$reserved_peers$中
+
+\item 将新节点的地址加入到spec.json中的validator和accounts中
+\end{enumerate}
+
+\subsubsection*{当前节点配置}
+三个节点： 
+
+node1.azfs.com.cn 35.194.230.35 
+node2.azfs.com.cn 35.201.227.55
+node3.azfs.com.cn 35.201.213.169
+
+三个节点分别跑着parity和ipfs服务，并且node1运行monitor服务。
+
+另外运行的consul服务地址为：http://consul.azfs.com.cn:8500
+parity的RPC端口为8545，websocket端口为8546，UI端口为8180
+例如：进入node1的parity UI为http://node1.azfs.com.cn:8180 （需要在后端生成token才能访问）
+
+monitor服务地址为：http://node1.azfs.com.cn:3001
+
+区块链浏览器 http://node2.azfs.com.cn:3000
+
+\section{下周规划}
+本周项目的事暂时告一段落，下周还是回到我之前看的PATE方面来，继续看PATE方面的文章。
+
+\end{document}

@@ -1,0 +1,261 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{Papernot2016SemisupervisedKT}{article}{}
+      \name{author}{5}{}{%
+        {{hash=58ca864d11bbe53214716bb8177beab9}{%
+           family={Papernot},
+           familyi={P\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9a04ae935da573a7aa9c83afdf2fd845}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Martín},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36009ff19905955cdcf3b38361a28a94}{%
+           family={Erlingsson},
+           familyi={E\bibinitperiod},
+           given={Úlfar},
+           giveni={Ú\bibinitperiod}}}%
+        {{hash=b8309a3e80e90bd0b1aa74558c5e9741}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1754a40f9d600dea756c1dd1047ce170}{%
+           family={Talwar},
+           familyi={T\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3441e932b2a0ab64af50e62bd4fee91d}
+      \strng{fullhash}{c5a348fcb29da174d99ab4f06e9a9d2c}
+      \strng{authornamehash}{3441e932b2a0ab64af50e62bd4fee91d}
+      \strng{authorfullhash}{c5a348fcb29da174d99ab4f06e9a9d2c}
+      \field{sortinit}{1}
+      \field{sortinithash}{27a2bc5dfb9ed0a0422134d636544b5d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CoRR}
+      \field{title}{Semi-supervised Knowledge Transfer for Deep Learning from Private Training Data}
+      \field{volume}{abs/1610.05755}
+      \field{year}{2016}
+    \endentry
+    \entry{fredrikson2015model}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ca53191803a563335db0f1917ff556b2}{%
+           family={Fredrikson},
+           familyi={F\bibinitperiod},
+           given={Matt},
+           giveni={M\bibinitperiod}}}%
+        {{hash=940ca4c2de6bee5757bbfe47cbff31bb}{%
+           family={Jha},
+           familyi={J\bibinitperiod},
+           given={Somesh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4987cfb2b2fac291a9b2963bdc9b5d53}{%
+           family={Ristenpart},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{c94c976331a7fb5c6522a7daf7b0752a}
+      \strng{fullhash}{c94c976331a7fb5c6522a7daf7b0752a}
+      \strng{authornamehash}{c94c976331a7fb5c6522a7daf7b0752a}
+      \strng{authorfullhash}{c94c976331a7fb5c6522a7daf7b0752a}
+      \field{sortinit}{3}
+      \field{sortinithash}{197da6d6c34c6b20ce45c4d4baace5a4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security}
+      \field{title}{Model inversion attacks that exploit confidence information and basic countermeasures}
+      \field{year}{2015}
+      \field{pages}{1322\bibrangedash 1333}
+      \range{pages}{12}
+    \endentry
+    \entry{shokri2017membership}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=fcd1e648e4facf942e34fc13811d6a6e}{%
+           family={Shokri},
+           familyi={S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3864d523a96cfd19ab9aef11e8671c11}{%
+           family={Stronati},
+           familyi={S\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b4778984f6540634409611e0c5414b03}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Congzheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4e537ec14ad5b0c2fbdb6556551cbf92}
+      \strng{fullhash}{c4e315fd34ac758a7e694a6ad5300f7b}
+      \strng{authornamehash}{4e537ec14ad5b0c2fbdb6556551cbf92}
+      \strng{authorfullhash}{c4e315fd34ac758a7e694a6ad5300f7b}
+      \field{sortinit}{4}
+      \field{sortinithash}{d221becdd544034cf9082056cd6e6d2d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Security and Privacy (SP), 2017 IEEE Symposium on}
+      \field{title}{Membership inference attacks against machine learning models}
+      \field{year}{2017}
+      \field{pages}{3\bibrangedash 18}
+      \range{pages}{16}
+    \endentry
+    \entry{hitaj2017deep}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ea86e6ba0295421071c4a22b005f2217}{%
+           family={Hitaj},
+           familyi={H\bibinitperiod},
+           given={Briland},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5c4a4e7852b085ecea5927fa90f39f56}{%
+           family={Ateniese},
+           familyi={A\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5dc45e351dbe91be5d6b7c18e011cf3e}{%
+           family={Pérez-Cruz},
+           familyi={P\bibinithyphendelim C\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{340d8096c648c683480b1c1ffe0515b7}
+      \strng{fullhash}{340d8096c648c683480b1c1ffe0515b7}
+      \strng{authornamehash}{340d8096c648c683480b1c1ffe0515b7}
+      \strng{authorfullhash}{340d8096c648c683480b1c1ffe0515b7}
+      \field{sortinit}{5}
+      \field{sortinithash}{c9df3c9fb8f555dd9201cedc5e343021}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{title}{Deep models under the GAN: information leakage from collaborative deep learning}
+      \field{year}{2017}
+      \field{pages}{603\bibrangedash 618}
+      \range{pages}{16}
+    \endentry
+    \entry{abadi2016deep}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=f39ffee58f8a71d84d8b13c05804b2cc}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=25446ff761c3633df18431097f7205ca}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=597fff55821bc18415a1a2b9d8d5f2a5}{%
+           family={McMahan},
+           familyi={M\bibinitperiod},
+           given={H\bibnamedelima Brendan},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=2eea0075441c4e9acfc378c1345323f2}{%
+           family={Mironov},
+           familyi={M\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+        {{hash=1754a40f9d600dea756c1dd1047ce170}{%
+           family={Talwar},
+           familyi={T\bibinitperiod},
+           given={Kunal},
+           giveni={K\bibinitperiod}}}%
+        {{hash=32a08717e0d6dcde59bc98b96800ed6c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{6c084fbda751118c2f67f33e81882c79}
+      \strng{fullhash}{bdbd13314c63bf7d2361047a3eb95cd2}
+      \strng{authornamehash}{6c084fbda751118c2f67f33e81882c79}
+      \strng{authorfullhash}{bdbd13314c63bf7d2361047a3eb95cd2}
+      \field{sortinit}{8}
+      \field{sortinithash}{2f1b0e69e7617f99664f1cd00bb9603c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{title}{Deep learning with differential privacy}
+      \field{year}{2016}
+      \field{pages}{308\bibrangedash 318}
+      \range{pages}{11}
+    \endentry
+    \entry{shokri2015privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=fcd1e648e4facf942e34fc13811d6a6e}{%
+           family={Shokri},
+           familyi={S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \strng{fullhash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \strng{authornamehash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \strng{authorfullhash}{831b4bbcdf0e98d8e0fb78526ae6c67b}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd ACM SIGSAC conference on computer and communications security}
+      \field{title}{Privacy-preserving deep learning}
+      \field{year}{2015}
+      \field{pages}{1310\bibrangedash 1321}
+      \range{pages}{12}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

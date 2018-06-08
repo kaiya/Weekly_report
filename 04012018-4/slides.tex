@@ -1,0 +1,83 @@
+%!TEX program = xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[aspectration=169]{beamer}
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+\usepackage{graphicx}
+\usepackage{cite}
+% \usepackage{geometry}
+% \geometry{left=2.0cm, right=2.0cm, top=2.5cm, bottom=2.5cm}
+% \usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage{subfig}
+\usepackage{caption}
+\captionsetup{font={scriptsize}}
+\usepackage[T1]{fontenc}
+\usepackage[square, authoryear, comma]{natbib}
+
+\renewcommand\figurename{图}
+
+%%%% 段落首行缩进两个字 %%%%
+% \makeatletter
+% \let\@afterindentfalse\@afterindenttrue
+% \@afterindenttrue
+% \makeatother
+% \setlength{\parindent}{2em}  %中文缩进两个汉字位
+
+%%%% 下面的命令设置行间距与段落间距 %%%%
+\linespread{1.4}
+% \setlength{\parskip}{1ex}
+\setlength{\parskip}{0.5\baselineskip}
+
+\title{学习汇报}
+\author{熊凯亚}
+\date{\today}
+\institute[JNU]{Jinan University}
+% \email{xiongkaiya@gmail.com}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents[part=1, pausesections]
+\end{frame}
+
+\begin{frame}{引言}
+
+\section{引言}
+
+%最近两周看了一些关于去中心化深度学习中的隐私保护问题。如\cite{hitaj2017deep}中提出了一种攻击模型，这种模型针对于\cite{shokri2015privacy}中提出的协作学习进行了攻击。\cite{46432},\cite{abadi2016deep},\cite{bonawitz2017practical},\cite{Phong2017PrivacyPreservingDL}.
+
+最近看了一些关于在去中心化的深度学习场景下的隐私保护的文章。去中心化的深度学习主要有两个方向，一是，CCS'15上Shokri等人\cite{shokri2015privacy}提出的隐私保护多方参与的协作深度学习模型（Collaborative Deep Learning）；二是，Google 提出的针对移动设备（Android）的多方参与的\href{https://research.googleblog.com/2017/04/federated-learning-collaborative.html}{联合学习}（Federated Learning）。\\
+
+
+
+\end{frame}
+
+
+\begin{frame}{References}
+\bibliographystyle{authordate1}
+\bibliography{references}
+\end{frame}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

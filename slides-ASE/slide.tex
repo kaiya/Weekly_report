@@ -1,0 +1,40 @@
+%!TEX program = xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[aspectratio=169]{beamer}
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+\usepackage[hyperref=true,backend=biber,sorting=none,backref=true,style=ieee]{biblatex}
+\addbibresource{references.bib}
+\renewcommand{\footnotesize}{\tiny}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{caption}
+\captionsetup{font={scriptsize}}
+\renewcommand\figurename{图}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+% \usepackage{tikz}
+
+% \usetheme{Madrid}
+% \titlegraphic{\includegraphics[width=2cm, height=2cm]{fig/jnulogo.png}}
+
+\title{高级软件工程}
+\author{熊凯亚}
+\date{\today}
+\institute[JNU]{Jinan University}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+
+\end{document}
