@@ -1,0 +1,36 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\citation{shokri2017membership}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}引言}{1}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}问题陈述}{1}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 1. 攻击者使用数据记录查询目标模型获得模型在此记录的预测结果。2. ML API：使用于目标模型相同的训练服务(google or amazon)来训练影子模型。目标模型和影子模型的训练数据集的格式相同但是互不相交。影子模型之间的训练数据集可能会有重叠。所有模型的内部参数都独立训练。\relax }}{2}{figure.caption.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {攻击模型}}}{2}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {训练模型}}}{2}{subfigure.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}会员推理}{2}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}总览}{2}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}影子模型}{2}{subsection.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}生成训练数据}{3}{subsection.3.3}}
+\@writefile{toc}{\contentsline {paragraph}{基于模型合成数据}{3}{section*.2}}
+\@writefile{toc}{\contentsline {paragraph}{基于统计合成数据}{3}{section*.3}}
+\@writefile{toc}{\contentsline {paragraph}{噪音版的真实数据}{3}{section*.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}训练攻击模型}{3}{subsection.3.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 训练攻击模型对影子模型的输入和输出。对于影子模型训练数据集中的所有记录，查询模型并输出。这些输出向量被标记为$“in”$并添加到攻击模型的训练数据集。并且使用与训练数据集分离的测试数据集查询影子模型，该集合上的输出被标记为$“out”$，并添加到攻击模型的训练数据集。在构建一个数据集来反映影子模型在训练和测试数据集上的黑盒行为之后，训练了$c_{target}$个目标攻击模型的集合，每个目标模型的输出类都对应一个攻击模型。\relax }}{4}{figure.caption.5}}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{shokri2017membership}{1}
